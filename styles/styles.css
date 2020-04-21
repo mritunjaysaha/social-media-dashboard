@@ -1,3 +1,12 @@
+:root {
+    --LimeGreen: hsl(163, 72%, 41%);
+    --BrightRed: hsl(356, 69%, 56%);
+    --Facebook: hsl(195, 100%, 50%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram1: hsl(60, 20%, 1%);
+    --Instagram2: hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -65,6 +74,98 @@ body {
     padding: 0.5em 1em 0 0;
 }
 
+/****************
+       Cards
+  ***************/
+.cards {
+    margin: 6em 4em 0 8em;
+}
+.card {
+    display: block;
+    float: left;
+    width: 22%;
+    height: 28vh;
+    margin-right: 2%;
+    background-color: var(--card-background);
+    text-align: center;
+    border-radius: 3px;
+}
+/* card border-top */
+.facebook {
+    border-top: 5px var(--Facebook) solid;
+}
+.twitter {
+    border-top: 5px var(--Twitter) solid;
+}
+.instagram {
+    border-top: 5px solid;
+    border-image-source: linear-gradient(
+        to right,
+        hsl(37, 97%, 70%),
+        hsl(329, 70%, 58%)
+    );
+    border-image-slice: 1;
+}
+.youtube {
+    border-top: 5px var(--YouTube) solid;
+}
+.username {
+    font-size: 12px;
+    padding: 2em 0 1em 0;
+    color: var(--secondary-font);
+}
+.follower-total {
+    font-size: 55px;
+    font-weight: 700;
+}
+.follower-subscriber {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--secondary-font);
+}
+.follower-increased {
+    padding: 2em;
+    font-size: 12px;
+    font-weight: 700;
+}
+.follower-green {
+    color: var(--LimeGreen);
+}
+.follower-red {
+    color: var(--BrightRed);
+}
+/* social media icons */
+.fab,
+.fa {
+    font-size: 18px;
+    padding-right: 0.5em;
+}
+.fa-facebook-square {
+    color: var(--Facebook);
+}
+.fa-twitter {
+    color: var(--Twitter);
+}
+.fa-instagram {
+    /* color: transparent; */
+    background: #d6249f;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-youtube-play {
+    color: var(--BrightRed);
+}
+/* Footer */
 .attribution {
     font-size: 11px;
     text-align: center;
