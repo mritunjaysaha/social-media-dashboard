@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+
+/*
+  Theme
+*/
+.dark {
+    --card-background: hsl(228, 28%, 20%);
+    --card-background-highlight: hsl(228, 28%, 30%);
+    --main-background: hsl(230, 17%, 14%);
+    --main-background-top: hsl(232, 19%, 15%);
+    --main-font: white;
+    --secondary-font: hsl(228, 34%, 66%);
+}
+
+.light {
+    --card-background: hsl(227, 47%, 96%);
+    --card-background-highlight: hsl(227, 47%, 91%);
+    --main-background: white;
+    --main-font: hsl(230, 17%, 14%);
+    --secondary-font: hsl(228, 12%, 44%);
+}
+
+/******************************
+  *          GENERAL            *
+  ******************************/
+
+body {
+    background: var(--main-background);
+    margin: 0 auto;
+    max-width: 1440px;
+    color: var(--main-font);
+}
+
+.header {
+    margin: 0;
+    padding: 1.5em 8em;
+    /* background-color: var(--main-background-top); */
+    background-size: 100vh, 100vh auto;
+    width: 100%;
+}
+.header p {
+    font-size: 12px;
+}
+.header .left {
+    float: left;
+}
+.header .right {
+    padding-top: 1em;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.right p {
+    padding: 0.5em 1em 0 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+/*# sourceMappingURL=styles.css.map */
