@@ -26,12 +26,17 @@
     --secondary-font: hsl(228, 12%, 44%);
 }
 
-/******************************
-  *          GENERAL            *
-  ******************************/
-
+html,
 body {
-    background: var(--main-background);
+    height: 100%;
+}
+body {
+    background: linear-gradient(
+        to bottom,
+        var(--main-background-top) 30%,
+        var(--main-background) 30% 80%,
+        var(--main-background) 80%
+    );
     margin: 0 auto;
     max-width: 1440px;
     color: var(--main-font);
@@ -40,7 +45,6 @@ body {
 .header {
     margin: 0;
     padding: 1.5em 8em;
-    /* background-color: var(--main-background-top); */
     background-size: 100vh, 100vh auto;
     width: 100%;
 }
