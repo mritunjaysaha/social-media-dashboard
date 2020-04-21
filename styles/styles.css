@@ -54,8 +54,6 @@ body {
 .header {
     margin: 0;
     padding: 1.5em 8em;
-    background-size: 100vh, 100vh auto;
-    width: 100%;
 }
 .header p {
     font-size: 12px;
@@ -78,7 +76,11 @@ body {
        Cards
   ***************/
 .cards {
-    margin: 6em 4em 0 8em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 6em 4em 4em 8em;
+    position: relative;
 }
 .card {
     display: block;
@@ -122,7 +124,7 @@ body {
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     color: var(--secondary-font);
 }
 .follower-increased {
@@ -165,6 +167,41 @@ body {
 .fa-youtube-play {
     color: var(--BrightRed);
 }
+
+/*****************
+
+    Overview
+
+ *****************/
+.overview {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4em 1em 8em;
+    padding-bottom: 10em;
+}
+.overview-data {
+    flex-direction: row;
+    padding-top: 2em;
+}
+.overview-tabs {
+    background: var(--card-background);
+    text-align: left;
+    height: 15vh;
+    padding: 1em;
+}
+.overview-tabs-left {
+    display: block;
+    float: left;
+}
+.overview-tabs-left p,
+.overview-tabs-right i {
+    padding-bottom: 2.3em;
+}
+.overview-tabs-right {
+    display: block;
+    float: right;
+}
+
 /* Footer */
 .attribution {
     font-size: 11px;
@@ -175,4 +212,13 @@ body {
     color: #3e52a3;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media only screen and (max-width: 576px) {
+    .header {
+        padding: 0;
+    }
+    .cards,
+    .overview-data {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
