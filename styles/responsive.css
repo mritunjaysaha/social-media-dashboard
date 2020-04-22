@@ -58,4 +58,7 @@
     .overview-tabs-right i {
         padding-bottom: 1.4em;
     }
+    .follower-total {
+        font-size: 4em;
+    }
 }
