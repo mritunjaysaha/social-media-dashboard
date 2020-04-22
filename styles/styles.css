@@ -149,10 +149,12 @@ body {
     font-size: 12px;
     font-weight: 700;
 }
-.follower-green {
+.follower-green,
+.fa-caret-up {
     color: var(--LimeGreen);
 }
-.follower-red {
+.follower-red,
+.fa-caret-down {
     color: var(--BrightRed);
 }
 /* social media icons */
