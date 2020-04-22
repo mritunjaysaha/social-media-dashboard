@@ -55,7 +55,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 1.5em 8em;
+    padding: 1.5em 8em 0 8em;
 }
 .header p {
     font-size: 12px;
@@ -92,7 +92,7 @@ body {
 .cards {
     display: flex;
     flex-direction: row;
-    margin: 6em 4em 4em 8em;
+    margin: 2em 4em 4em 8em;
     position: relative;
 }
 .card {
