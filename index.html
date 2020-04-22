@@ -13,7 +13,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="./styles/slider.css">
     <link rel="stylesheet" href="./styles/styles.css">
-
+    <link rel="stylesheet" href="./styles/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5c77b9e253.js" crossorigin="anonymous"></script>
 </head>
@@ -24,6 +24,7 @@
         <div class="left">
             <h1>Social Media Dashboard</h1>
             <p>Total Followers: 23,004</p>
+            <hr class="mobile-visible">
         </div>
         <div class="right header-slider">
             <p>Dark Mode</p>
@@ -42,7 +43,7 @@
         <div class="card facebook">
             <div class="card-details">
                 <p class="username">
-                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-facebook"></i>
                     <span>@nathanf</span>
                 </p>
                 <h1 class="follower-total">1987</h1>
@@ -59,11 +60,11 @@
                     <i class="fab fa-twitter"></i>
                     <span>@nathanf</span>
                 </p>
-                <h1 class="follower-total">1987</h1>
+                <h1 class="follower-total">1044</h1>
                 <p class="follower-subscriber">followers</p>
                 <p class="follower-increased follower-green">
                     <i class="fas fa-caret-up"></i>
-                    <span>12 Today</span>
+                    <span>99 Today</span>
                 </p>
             </div>
         </div>
@@ -73,11 +74,11 @@
                     <i class="fab fa-instagram"></i>
                     <span>@nathanf</span>
                 </p>
-                <h1 class="follower-total">1987</h1>
+                <h1 class="follower-total">11k</h1>
                 <p class="follower-subscriber">followers</p>
                 <p class="follower-increased follower-green">
                     <i class="fas fa-caret-up"></i>
-                    <span>12 Today</span>
+                    <span>1099 Today</span>
                 </p>
             </div>
         </div>
@@ -87,11 +88,11 @@
                     <i class="fa fa-youtube-play"></i>
                     <span>@nathanf</span>
                 </p>
-                <h1 class="follower-total">1987</h1>
+                <h1 class="follower-total">8239</h1>
                 <p class="follower-subscriber">followers</p>
                 <p class="follower-increased follower-red">
                     <i class="fas fa-caret-down"></i>
-                    <span>12 Today</span>
+                    <span>144 Today</span>
                 </p>
             </div>
         </div>
@@ -103,153 +104,138 @@
         <div class="overview-heading">
             <h1>Overview - Today</h1>
         </div>
-        <div class="overview-data">
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
+        <div class="overview-container">
+            <div class="overview-data">
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Page Views</p>
+                        <h1>87</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fab fa-facebook icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-up"></i>
+                            <span>
+                                3%
+                            </span>
+                        </p>
+                    </div>
                 </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Likes</p>
+                        <h1>52</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fab fa-facebook icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-down"></i>
+                            <span>
+                                2%
+                            </span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Likes</p>
+                        <h1>5462</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fab fa-instagram icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-up"></i>
+                            <span>
+                                2257%
+                            </span>
+                        </p>
+                    </div>
                 </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
-                </div>
-            </div>
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
-                </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
-                </div>
-            </div>
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
-                </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
-                </div>
-            </div>
-
-            <!-- Likes
-            52
-            2%
-
-            Likes
-            5462
-            2257%
-
-            Profile Views
-            52k
-            1375%
-
-            Retweets
-            117
-            303%
-
-            Likes
-            507
-            553%
-
-            Likes
-            107
-            19%
-
-            Total Views
-            1407
-            12% -->
-
-        </div>
-        <div class="overview-data">
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
-                </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Profile Views</p>
+                        <h1>52k</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fab fa-instagram icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-up"></i>
+                            <span>
+                                1375%
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
+            <div class="overview-data">
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Retweets</p>
+                        <h1>117</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fab fa-twitter icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-up "></i>
+                            <span>
+                                303%
+                            </span>
+                        </p>
+                    </div>
                 </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Likes</p>
+                        <h1>507</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fab fa-twitter icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-up"></i>
+                            <span>
+                                553%
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Likes</p>
+                        <h1>107</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fa fa-youtube-play icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-down"></i>
+                            <span>
+                                19%
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="overview-tabs card">
+                    <div class="overview-tabs-left">
+                        <p>Total Views</p>
+                        <h1>1407</h1>
+                    </div>
+                    <div class="overview-tabs-right">
+                        <i class="fa fa-youtube-play icon"></i>
+                        <p class="follower-green">
+                            <i class="fas fa-caret-down"></i>
+                            <span>
+                                12%
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
-                </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
-                </div>
-            </div>
-            <div class="overview-tabs card">
-                <div class="overview-tabs-left">
-                    <p>Page Views</p>
-                    <h1>87</h1>
-                </div>
-                <div class="overview-tabs-right">
-                    <i class="fab fa-twitter"></i>
-                    <p class="follower-green">3%</p>
-                </div>
-            </div>
-
-            <!-- Likes
-            52
-            2%
-
-            Likes
-            5462
-            2257%
-
-            Profile Views
-            52k
-            1375%
-
-            Retweets
-            117
-            303%
-
-            Likes
-            507
-            553%
-
-            Likes
-            107
-            19%
-
-            Total Views
-            1407
-            12% -->
-
         </div>
     </section>
-    <!-- <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <div class="attribution">
+        Challenge by <a target="_blank" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+            Mentor</a>.
+        Coded by <a target="_blank" href="https://mritunjaysaha.netlify.com">Mritunjay</a>.
+    </div>
     <script src="index.js"></script>
 </body>
 

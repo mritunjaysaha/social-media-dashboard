@@ -1,0 +1,61 @@
+@media only screen and (max-width: 576px) {
+    /* header section */
+
+    .header {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .mobile-visible {
+        display: block;
+        border: 0;
+        margin-top: 1em;
+        /* background-color: var(--secondary-font); */
+        background-color: #999;
+        height: 1px;
+    }
+    .right {
+        margin: 0;
+        padding: 1em 0;
+    }
+    .right p {
+        float: left;
+    }
+    .switch {
+        float: right;
+    }
+
+    /* cards section */
+    .cards {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card {
+        margin: 0 auto;
+        float: none;
+        width: 80%;
+        height: 32vh;
+        margin-bottom: 2em;
+    }
+
+    /* overview section */
+    .overview {
+        margin: 0;
+    }
+    .overview-heading {
+        padding: 2em 0 1em 2.2em;
+    }
+    .overview-data {
+        padding: 0;
+    }
+    .overview-tabs {
+        height: 15vh;
+        padding: 1em;
+    }
+    .overview-tabs-left p,
+    .overview-tabs-right i {
+        padding-bottom: 1.4em;
+    }
+}

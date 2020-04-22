@@ -1,7 +1,7 @@
 :root {
     --LimeGreen: hsl(163, 72%, 41%);
     --BrightRed: hsl(356, 69%, 56%);
-    --Facebook: hsl(195, 100%, 50%);
+    --Facebook: #4267b2;
     --Twitter: hsl(203, 89%, 53%);
     --Instagram1: hsl(60, 20%, 1%);
     --Instagram2: hsl(329, 70%, 58%);
@@ -52,32 +52,45 @@ body {
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 1.5em 8em;
 }
 .header p {
     font-size: 12px;
+    padding: 0.5em 0;
 }
-.header .left {
+.right {
+    position: relative;
+    /* display: flex; */
+    /* align-content: flex-end; */
+    margin-left: 36em;
+}
+
+.right p,
+.left p {
+    font-weight: 700;
+    color: var(--secondary-font);
+}
+.right p {
     float: left;
 }
-.header .right {
-    padding-top: 1em;
+.switch {
     float: right;
-    display: flex;
-    flex-direction: row;
 }
 
 .right p {
     padding: 0.5em 1em 0 0;
 }
-
+.mobile-visible {
+    display: none;
+}
 /****************
        Cards
   ***************/
 .cards {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
     margin: 6em 4em 4em 8em;
     position: relative;
@@ -91,6 +104,10 @@ body {
     background-color: var(--card-background);
     text-align: center;
     border-radius: 3px;
+    align-items: center;
+}
+.card:hover {
+    background-color: var(--card-background-highlight);
 }
 /* card border-top */
 .facebook {
@@ -112,23 +129,23 @@ body {
     border-top: 5px var(--YouTube) solid;
 }
 .username {
-    font-size: 12px;
+    font-size: 0.8em;
     padding: 2em 0 1em 0;
     color: var(--secondary-font);
 }
 .follower-total {
-    font-size: 55px;
+    font-size: 2.5em;
     font-weight: 700;
 }
 .follower-subscriber {
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 6px;
     color: var(--secondary-font);
 }
 .follower-increased {
-    padding: 2em;
+    padding: 1em;
     font-size: 12px;
     font-weight: 700;
 }
@@ -144,7 +161,7 @@ body {
     font-size: 18px;
     padding-right: 0.5em;
 }
-.fa-facebook-square {
+.fa-facebook {
     color: var(--Facebook);
 }
 .fa-twitter {
@@ -174,10 +191,12 @@ body {
 
  *****************/
 .overview {
+    margin: 0 4em 1em 8em;
+    /* padding-bottom: 2em; */
+}
+.overview-container {
     display: flex;
     flex-direction: column;
-    margin: 0 4em 1em 8em;
-    padding-bottom: 10em;
 }
 .overview-data {
     flex-direction: row;
@@ -187,7 +206,10 @@ body {
     background: var(--card-background);
     text-align: left;
     height: 15vh;
-    padding: 1em;
+    /* padding: 1.5em 1em 0 1em; */
+    align-content: center;
+    justify-content: center;
+    padding: 1.4em;
 }
 .overview-tabs-left {
     display: block;
@@ -195,30 +217,26 @@ body {
 }
 .overview-tabs-left p,
 .overview-tabs-right i {
-    padding-bottom: 2.3em;
+    padding-bottom: 1.2em;
 }
 .overview-tabs-right {
     display: block;
     float: right;
 }
 
+.icon {
+    text-align: right;
+    padding-left: 1em;
+    line-height: 1;
+}
+
 /* Footer */
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: 2em;
 }
 
 .attribution a {
     color: #3e52a3;
-}
-
-@media only screen and (max-width: 576px) {
-    .header {
-        padding: 0;
-    }
-    .cards,
-    .overview-data {
-        flex-direction: column;
-        margin: 0 auto;
-    }
 }
